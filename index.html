@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.2/core.js"></script>
+    <style>
+        body {
+        background-color:rgb(248, 241, 230);
+        text-align: center;
+        padding: 30px;
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-top: 150px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+    <title>Skills Test - 1Q</title>
+</head>
+<body>
+    <div style="background-color: rgb(248, 203, 203); padding: 30px 20px; border-radius: 15px; border-color: #b99494; border-style: solid; color: rgb(33, 0, 6); display: inline-block; box-shadow: -1px 1px 17px 1px #daece7; font-size: 15px;">
+    <h1>OB Entrepreneurship Fair Group 1 - Cafe</h1>
+    <h2>Menu</h2>
+        <label>Drinks:</label>
+        <select id="drink">
+            <option value="95">americano - 95</option><br>
+            <option value="100">mocha - 100</option><br>
+            <option value="110">spanish latte - 110</option><br>
+            <option value="150">matcha - 150</option><br>
+            <option value="120">caramel macchiato - 120</option><br>
+        </select>
+        <input type="button" py-click="create_order" value="create order">
+    </div><br><br>
+
+    <!-- results -->
+    <div id="receipt" style="background-color:white;">
+        <h3>Receipt</h3>
+        <div id="subtotal"></div>
+        <div id="VAT"></div>
+        <div id="total"></div>
+    </div>
+
+<py-script src="main.py"></py-script>
+</body>
+</html>
